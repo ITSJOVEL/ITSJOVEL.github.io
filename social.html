@@ -1,0 +1,168 @@
+<html>
+<head>
+<!--style-->
+<style>
+body{
+	background-color: black;
+	overflow-x: hidden;
+	cursor: url("cursor2.gif"),auto;
+}
+
+a { 
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	cursor: url("cursor2.gif"),auto;
+}
+
+a:hover{
+	font-style: italic;
+}
+
+h1 { 
+	display: inline-block;
+	position: fixed;
+	margin-top: 225px;
+	margin-left: 355px;
+	font-family: arial;
+	font-size: 35px;
+	font-style: italic;
+	color: white;
+}
+
+.background {
+	margin-top: -1020px;
+	margin-left: -20px;
+	width: 2550px;
+	display: inline-block;
+	position: absolute;
+	opacity: 0.7;
+}
+
+.foreground {
+	display: inline-block;
+	position: fixed;
+	margin-top: 9%;
+	margin-left: 17%;
+	width: 63%;
+	height: 60%;
+	background-color: black;
+}
+
+#insta {
+	display: inline-block;
+	position: fixed;
+	margin-top: 278px;
+	margin-left: 380px;
+}
+
+#instahover{
+	display: hidden;
+	position: fixed;
+	margin-top: 293px;
+	margin-left: 385px;
+}
+
+#fb{
+	display: inline-block;
+	position: fixed; 
+	margin-left: 530px;
+	margin-top: 290px;
+}
+
+#fbhover{
+	display: inline-block;
+	position: fixed; 
+	margin-left: 535px;
+	margin-top: 295px;
+}
+
+#twit{
+	display: inline-block;
+	position: fixed;
+	margin-left: 670px;
+	margin-top: 290px;
+
+}
+
+#twithover{ 
+	display: inline-block;
+	position: fixed;
+	margin-left: 675px;
+	margin-top: 295px;
+ }
+
+ #jovel {
+ 	display: inline-block;
+ 	position: fixed;
+ 	margin-top: 11%;
+ 	margin-left: 80%;
+ }
+
+#home {
+	display: inline-block;
+	position: fixed;
+	margin-left: 82%;
+	margin-top: 48%;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: black;
+}
+</style>
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$( document ).ready(function() {
+    console.log( "hello!" );
+});
+
+$(document).ready(function(){
+	$("#instahover").hide();
+	$("#fbhover").hide();
+	$("#twithover").hide();
+})
+
+$(document).ready(function() {
+	$("#insta").mouseenter(function(){
+		$("#instahover").show();
+	});
+	$("#insta").mouseleave(function(){
+		$("#instahover").hide();
+	});
+}); 
+
+$(document).ready(function() {
+	$("#fb").mouseenter(function(){
+		$("#fbhover").show();
+	});
+	$("#fb").mouseleave(function(){
+		$("#fbhover").hide();
+	});
+});
+
+$(document).ready(function() {
+	$("#twit").mouseenter(function(){
+		$("#twithover").show();
+	});
+	$("#twit").mouseleave(function(){
+		$("#twithover").hide();
+	});
+}); 
+</script>
+</head>
+<body>
+<div class="background"><img src="checkers2.jpg" width="50%"></div>
+<div class="foreground"></div>
+<a href="mailto:info.jovelramos@gmail.com" target="_top"><h1>info.jovelramos@gmail.com</h1></a>
+<div id="instahover"><img src="instahover.png" height="125px"></div>
+<a href="https://www.instagram.com/itsjovel"><div id="insta"><img src="insta.png" height="125px"></div></a>
+<div id="fbhover"><img src="fbhover.png" height="125px"></div>
+<a href="https://www.facebook.com/profile.php?id=100012431235962"><div id="fb"><img src="fb.png" height="125px"></div></a>
+<div id="twithover"><img src="twithover.png" height="125px"></div>
+<a href="https://twitter.com/itsjovel"><div id="twit"><img src="twit.png" height="125px"></div></a>
+<div id="jovel"><img src="jovel1.gif" width="80%"></div>
+<div id="home"><a href="index.html">home</a></div>
+</body>
+</html>
